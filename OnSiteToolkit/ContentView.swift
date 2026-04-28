@@ -12,8 +12,7 @@ struct ContentView: View {
         NavigationStack {
             List {
                 NavigationLink {
-                    Text("CIDR Calculator")
-                        .navigationTitle("CIDR Calculator")
+                    CIDRCalculatorView()
                 } label: {
                     ToolRowView(
                         title: "CIDR Calculator",
