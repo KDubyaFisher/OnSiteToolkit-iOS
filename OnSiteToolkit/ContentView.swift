@@ -22,8 +22,7 @@ struct ContentView: View {
                 }
 
                 NavigationLink {
-                    Text("Common Ports")
-                        .navigationTitle("Common Ports")
+                    PortsReferenceView()
                 } label: {
                     ToolRowView(
                         title: "Common Ports",
