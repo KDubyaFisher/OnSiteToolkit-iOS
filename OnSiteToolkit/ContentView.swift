@@ -40,6 +40,16 @@ struct ContentView: View {
                         icon: "checklist"
                     )
                 }
+                
+                NavigationLink {
+                    InventoryView()
+                } label: {
+                    ToolRowView(
+                        title: "Equipment Inventory",
+                        subtitle: "Browse customers, sites, equipment, and switch ports.",
+                        icon: "shippingbox"
+                    )
+                }
             }
             .navigationTitle("OnSite Toolkit")
         }
