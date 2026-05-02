@@ -32,8 +32,7 @@ struct ContentView: View {
                 }
 
                 NavigationLink {
-                    Text("Troubleshooting Checklists")
-                        .navigationTitle("Checklists")
+                    TroubleshootingView()
                 } label: {
                     ToolRowView(
                         title: "Troubleshooting Checklists",
