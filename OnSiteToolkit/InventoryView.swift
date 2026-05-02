@@ -12,8 +12,7 @@ struct InventoryView: View {
     var body: some View {
         List(InventoryData.customers) { customer in
             NavigationLink {
-                Text(customer.name)
-                    .navigationTitle(customer.name)
+                CustomerDetailView(customer: customer)
             } label: {
                 CustomerRowView(customer: customer)
             }
