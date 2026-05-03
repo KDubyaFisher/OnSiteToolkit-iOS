@@ -36,8 +36,7 @@ struct SiteDetailView: View {
                 } else {
                     ForEach(equipment) { item in
                         NavigationLink {
-                            Text(item.name)
-                                .navigationTitle(item.name)
+                            EquipmentDetailView(equipment: item)
                         } label: {
                             VStack(alignment: .leading, spacing: 4) {
                                 Text(item.name)
