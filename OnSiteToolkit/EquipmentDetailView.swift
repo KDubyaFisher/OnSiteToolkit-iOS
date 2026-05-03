@@ -49,8 +49,7 @@ struct EquipmentDetailView: View {
             if isSwitch {
                 Section {
                     NavigationLink {
-                        Text("\(equipment.name) Ports")
-                            .navigationTitle("Ports")
+                        SwitchPortListView(equipment: equipment)
                     } label: {
                         Label("View Ports", systemImage: "cable.connector")
                     }
